@@ -1,0 +1,66 @@
+body.admin-body { background: #fcfdfb; color: #263b34; }
+.admin-body #root { min-height: 100vh; }
+.admin-shell { min-height: 100vh; }
+.admin-sider { position: sticky !important; top: 0; height: 100vh; border-right: 1px solid #e8ecf1; }
+.admin-brand { height: 84px; display: flex; align-items: center; gap: 12px; padding: 0 23px; font-size: 19px; font-weight: 600; white-space: nowrap; color: #1f2329; }
+.admin-brand-mark { display: grid; place-items: center; flex-shrink: 0; width: 30px; height: 30px; border-radius: 10px 10px 10px 3px; background: #3d7161; color: white; font: 24px Georgia, serif; padding-bottom: 4px; }
+.admin-brand span .ant-typography { display: block; font-size: 11px; font-weight: 400; margin-top: 3px; }
+.admin-sider .ant-menu { border-inline-end: 0 !important; }
+.admin-sidebar-note { position: absolute; bottom: 24px; left: 24px; color: #8a929f; font-size: 12px; line-height: 1.8; }
+.admin-sidebar-note p { margin: 8px 0 0; }
+.admin-header { height: 64px; padding: 0 24px; border-bottom: 1px solid #e8ecf1; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.admin-content { min-width: 0; padding: 28px; }
+.admin-page-heading { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; gap: 16px; }
+.admin-page-heading h3.ant-typography { margin: 0 0 8px; font-weight: 600; }
+.admin-content > .ant-alert, .admin-content > .ant-card, .admin-content > .ant-row { margin-bottom: 20px; }
+.admin-stat-card { position: relative; }
+.admin-stat-icon { color: #3d7161; background: #edf4e9; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; border-radius: 11px; margin-bottom: 18px; font-size: 18px; }
+.admin-stat-card .ant-statistic-content { font-size: 28px; font-weight: 600; }
+.admin-filter-card .ant-form { gap: 14px 0; }
+.admin-filter-card .ant-form-item { margin-bottom: 0; }
+.admin-table-card .ant-card-body { padding: 0; }
+.admin-table-card .ant-table { border-radius: 0; }
+.admin-table-card .ant-table-cell { font-size: 13px; }
+.admin-title-link { white-space: normal; text-align: left; height: auto; padding: 0 !important; font-weight: 500; font-size: 14px; line-height: 1.7; overflow-wrap: anywhere; }
+.admin-subtext { display: flex; gap: 8px; margin-top: 5px; font-size: 11px; }
+.admin-record-preview .ant-typography { white-space: pre-wrap; overflow-wrap: anywhere; margin: 0; }
+.admin-pagination { padding: 18px 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; border-top: 1px solid #f0f0f0; }
+.admin-batch { display: flex; align-items: center; justify-content: space-between; padding: 12px 20px; background: #edf5eb; }
+.admin-record-meta { margin: 24px 0; }
+.admin-record-meta .ant-descriptions-item-content { overflow-wrap: anywhere; word-break: break-word; }
+.admin-full-text { white-space: pre-wrap; overflow-wrap: anywhere; line-height: 1.9; }
+.admin-detail-tags { margin-bottom: 18px; }
+.admin-detail-actions { margin-top: 24px; }
+.admin-summary-field { margin-bottom: 14px; }
+.admin-storage-path { margin: 18px 0; overflow-wrap: anywhere; }.admin-storage-path summary { cursor: pointer; color: #3d7161; margin-bottom: 12px; }
+.admin-version { color: #9aa2ad; font-size: 11px; margin-top: 28px; display: flex; justify-content: space-between; }
+.admin-footnote { font-size: 12px; }.admin-reasoning { margin: 20px 0; }.admin-reasoning summary { cursor: pointer; margin-bottom: 12px; }
+.admin-body .ant-modal .ant-alert { margin-top: 16px; }
+@media(max-width: 1000px) { .admin-content { padding: 20px; }.admin-header { padding: 0 16px; }.admin-header > .ant-space:last-child .ant-badge { display: none; }.admin-stat-card .ant-card-body { padding: 18px; } }
+.admin-sider { border-color: #e5eae5; background: #f4f6f1 !important; }
+.admin-body { scrollbar-width: thin; scrollbar-color: #c9d5c8 transparent; }
+.admin-brand { color: #263b34; font-size: 17px; height: 86px; }
+.admin-sider .ant-menu { padding: 0 10px; }
+.admin-sider .ant-menu-item { font-size: 12px; margin-block: 6px; }
+.admin-sidebar-note { left: 22px; right: 18px; border-top: 1px solid #dfe7db; padding-top: 17px; color: #737f79; font-size: 11px; }
+.admin-header { border-color: #e5eae5; height: 62px; }
+.admin-content { padding: 30px 32px; }
+.admin-eyebrow { display: block; font-size: 9px; letter-spacing: 1.8px; color: #647d6e; margin-bottom: 11px; }
+.admin-page-heading { margin-bottom: 26px; }
+.admin-page-heading h3.ant-typography { font-size: 26px; letter-spacing: -.6px; }
+.admin-page-heading .ant-typography-secondary { font-size: 12px; line-height: 1.8; }
+.admin-stat-card { box-shadow: 0 2px 5px #25392b03; }
+.admin-stat-card .ant-statistic-title { font-size: 11px; margin-bottom: 8px; }
+.admin-stat-card .ant-statistic-content { font-size: 29px; color: #263b34; }
+.admin-table-card { overflow: hidden; }
+.admin-filter-card { margin-bottom: 18px !important; }
+.admin-filter-card .ant-card-body { padding: 18px 20px; }
+.admin-table-card .ant-table-cell { padding-block: 17px !important; }
+.admin-table-card .ant-table-thead .ant-table-cell { padding-block: 13px !important; font-size: 11px; font-weight: 600; }
+.admin-body .ant-card-head-title { font-size: 13px; font-weight: 600; }
+.admin-body .ant-card-head { min-height: 55px; }
+.admin-shell .ant-alert { border-radius: 11px; font-size: 12px; }
+.admin-shell .ant-breadcrumb { font-size: 11px; }
+.admin-shell .ant-btn { font-size: 12px; }
+.admin-pagination { border-color: #e5eae5; color: #737f79; font-size: 11px; }
+@media(max-width: 1000px) { .admin-content { padding: 24px 20px; }.admin-page-heading h3.ant-typography { font-size: 23px; }.admin-sider.ant-layout-sider-collapsed .admin-brand { padding: 0; justify-content: center; }.admin-sider.ant-layout-sider-collapsed .ant-menu { padding: 0 4px; } }

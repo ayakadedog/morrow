@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "replace-with-stable-id",
+  "displayName": "待填写",
+  "status": "template",
+  "persona": "profile/persona.md",
+  "prompt": "profile/prompt.md",
+  "roleConfig": "profile/role.json",
+  "interactionConfig": "interaction/dialogues.json",
+  "catalogConfig": "interaction/actions.json",
+  "behaviorConfig": "interaction/behaviors.json",
+  "bubbleConfig": "interaction/bubble.json",
+  "visual": {
+    "format": "full-body-png",
+    "canvas": { "width": 1024, "height": 1536 },
+    "mirrorAllowed": false,
+    "defaultExpression": "normal",
+    "anchor": { "x": 0.5, "y": 1 },
+    "expressions": { "normal": "assets/portraits/normal.png" },
+    "fallbackExpression": "normal",
+    "animationConfig": "assets/animations/actions.json"
+  },
+  "voice": { "enabled": false, "status": "deferred" },
+  "memory": { "namespace": "replace-with-stable-id" }
+}

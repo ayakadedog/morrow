@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 2,
+  "responses": {
+    "arrival": [
+      { "id": "arrival-1", "speaker": "gojo", "text": "哟，我来了。今天想聊什么？", "expression": "smile", "action": "easygreet" },
+      { "id": "arrival-2", "speaker": "gojo", "text": "五条悟，到场。慢慢来，我先在这儿待着。", "expression": "normal" }
+    ],
+    "notice": [
+      { "id": "notice-1", "speaker": "gojo", "text": "嗯？有事就说嘛。", "expression": "smile" },
+      { "id": "notice-2", "speaker": "gojo", "text": "想聊点什么，还是只是路过？都行。", "expression": "normal" }
+    ],
+    "touch": [
+      { "id": "touch-1", "speaker": "gojo", "text": "收到。找五条老师有什么事？", "expression": "smile", "action": "acknowledge" },
+      { "id": "touch-2", "speaker": "gojo", "text": "哟，又见面了。你说，我听着。", "expression": "normal" },
+      { "id": "touch-3", "speaker": "gojo", "text": "今天也给自己留点喘气的时间吧。", "expression": "normal" }
+    ],
+    "placed": [
+      { "id": "placed-1", "speaker": "gojo", "text": "换个位置，也不错。", "expression": "normal" },
+      { "id": "placed-2", "speaker": "gojo", "text": "好，就在这里待着。", "expression": "smile" }
+    ],
+    "checkin": [
+      { "id": "checkin-1", "speaker": "gojo", "text": "偶尔放松一下也行。想说话的时候再叫我。", "expression": "normal" },
+      { "id": "checkin-2", "speaker": "gojo", "text": "今天有没有一点让你高兴的事？不急着回答。", "expression": "smile" }
+    ],
+    "return": [
+      { "id": "return-1", "speaker": "gojo", "text": "欢迎回来。接下来按你的节奏就好。", "expression": "smile", "action": "easygreet" },
+      { "id": "return-2", "speaker": "gojo", "text": "哟，回来啦。要继续聊，还是先歇一下？", "expression": "normal" }
+    ],
+    "greeting": [
+      { "id": "greeting-1", "speaker": "gojo", "text": "你好呀。今天的五条老师状态不错哦。", "expression": "smile", "action": "easygreet" },
+      { "id": "greeting-2", "speaker": "gojo", "text": "哟，见到你了。有什么新鲜事？", "expression": "smile", "action": "easygreet" }
+    ],
+    "support": [
+      { "id": "support-1", "speaker": "gojo", "text": "先别急着否定自己。把最难的那一步拆小一点，我们从这里想。", "expression": "serious", "action": "acknowledge" },
+      { "id": "support-2", "speaker": "gojo", "text": "不需要一次就做得漂亮。能往前走一点，也算本事。", "expression": "normal" },
+      { "id": "support-3", "speaker": "gojo", "text": "别人怎么评价是一回事，你想走哪条路，才值得认真想。", "expression": "serious" }
+    ],
+    "rest": [
+      { "id": "rest-1", "speaker": "gojo", "text": "休息可不是认输。先把肩膀放松一点，怎么样？", "expression": "normal" },
+      { "id": "rest-2", "speaker": "gojo", "text": "现在不想说话也没关系。那就安静待一会儿。", "expression": "serious" },
+      { "id": "rest-3", "speaker": "gojo", "text": "今天就先歇一下吧。甜点的话题，等你想聊再说。", "expression": "smile" }
+    ]
+  }
+}

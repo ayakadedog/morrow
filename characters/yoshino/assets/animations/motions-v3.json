@@ -1,0 +1,397 @@
+{
+  "schemaVersion": 1,
+  "status": "continuous-runtime-draft",
+  "description": "同一张表情图的连续局部网格形变，小幅手部回应、低头和安慰；保留 v2 大幅姿态图作素材参考。坐标与位移按原画布归一化，旋转为度。",
+  "actions": {
+    "greet": {
+      "durationMs": 2100,
+      "regions": [
+        {
+          "center": {
+            "x": 0.475,
+            "y": 0.352
+          },
+          "radius": {
+            "x": 0.105,
+            "y": 0.112
+          },
+          "pivot": {
+            "x": 0.47,
+            "y": 0.43
+          },
+          "keyframes": [
+            {
+              "offset": 0,
+              "x": 0,
+              "y": 0,
+              "rotate": 0
+            },
+            {
+              "offset": 0.25,
+              "x": -0.006,
+              "y": -0.017,
+              "rotate": -6
+            },
+            {
+              "offset": 0.46,
+              "x": -0.012,
+              "y": -0.018,
+              "rotate": -2
+            },
+            {
+              "offset": 0.66,
+              "x": -0.005,
+              "y": -0.016,
+              "rotate": -5
+            },
+            {
+              "offset": 1,
+              "x": 0,
+              "y": 0,
+              "rotate": 0
+            }
+          ]
+        },
+        {
+          "center": {
+            "x": 0.5,
+            "y": 0.16
+          },
+          "radius": {
+            "x": 0.39,
+            "y": 0.25
+          },
+          "pivot": {
+            "x": 0.51,
+            "y": 0.275
+          },
+          "keyframes": [
+            {
+              "offset": 0,
+              "x": 0,
+              "y": 0,
+              "rotate": 0
+            },
+            {
+              "offset": 0.42,
+              "x": 0,
+              "y": 0.003,
+              "rotate": -1.1
+            },
+            {
+              "offset": 1,
+              "x": 0,
+              "y": 0,
+              "rotate": 0
+            }
+          ]
+        }
+      ]
+    },
+    "shy": {
+      "durationMs": 1900,
+      "regions": [
+        {
+          "center": {
+            "x": 0.5,
+            "y": 0.16
+          },
+          "radius": {
+            "x": 0.39,
+            "y": 0.25
+          },
+          "pivot": {
+            "x": 0.51,
+            "y": 0.275
+          },
+          "keyframes": [
+            {
+              "offset": 0,
+              "x": 0,
+              "y": 0,
+              "rotate": 0
+            },
+            {
+              "offset": 0.32,
+              "x": -0.004,
+              "y": 0.009,
+              "rotate": 2.6
+            },
+            {
+              "offset": 0.65,
+              "x": -0.004,
+              "y": 0.01,
+              "rotate": 2.8
+            },
+            {
+              "offset": 1,
+              "x": 0,
+              "y": 0,
+              "rotate": 0
+            }
+          ]
+        },
+        {
+          "center": {
+            "x": 0.475,
+            "y": 0.352
+          },
+          "radius": {
+            "x": 0.105,
+            "y": 0.112
+          },
+          "pivot": {
+            "x": 0.47,
+            "y": 0.43
+          },
+          "keyframes": [
+            {
+              "offset": 0,
+              "x": 0,
+              "y": 0,
+              "rotate": 0
+            },
+            {
+              "offset": 0.45,
+              "x": 0.003,
+              "y": 0.004,
+              "rotate": 1.5
+            },
+            {
+              "offset": 1,
+              "x": 0,
+              "y": 0,
+              "rotate": 0
+            }
+          ]
+        }
+      ]
+    },
+    "comfort": {
+      "durationMs": 1900,
+      "regions": [
+        {
+          "center": {
+            "x": 0.5,
+            "y": 0.16
+          },
+          "radius": {
+            "x": 0.39,
+            "y": 0.25
+          },
+          "pivot": {
+            "x": 0.51,
+            "y": 0.275
+          },
+          "keyframes": [
+            {
+              "offset": 0,
+              "x": 0,
+              "y": 0,
+              "rotate": 0
+            },
+            {
+              "offset": 0.3,
+              "x": 0,
+              "y": 0.004,
+              "rotate": -1.5
+            },
+            {
+              "offset": 0.65,
+              "x": 0,
+              "y": 0.002,
+              "rotate": 0.6
+            },
+            {
+              "offset": 1,
+              "x": 0,
+              "y": 0,
+              "rotate": 0
+            }
+          ]
+        }
+      ]
+    },
+    "smallgreet": {
+      "durationMs": 2100,
+      "regions": [
+        {
+          "center": {
+            "x": 0.475,
+            "y": 0.352
+          },
+          "radius": {
+            "x": 0.105,
+            "y": 0.112
+          },
+          "pivot": {
+            "x": 0.47,
+            "y": 0.43
+          },
+          "keyframes": [
+            {
+              "offset": 0,
+              "x": 0,
+              "y": 0,
+              "rotate": 0
+            },
+            {
+              "offset": 0.25,
+              "x": -0.006,
+              "y": -0.017,
+              "rotate": -6
+            },
+            {
+              "offset": 0.46,
+              "x": -0.012,
+              "y": -0.018,
+              "rotate": -2
+            },
+            {
+              "offset": 0.66,
+              "x": -0.005,
+              "y": -0.016,
+              "rotate": -5
+            },
+            {
+              "offset": 1,
+              "x": 0,
+              "y": 0,
+              "rotate": 0
+            }
+          ]
+        },
+        {
+          "center": {
+            "x": 0.5,
+            "y": 0.16
+          },
+          "radius": {
+            "x": 0.39,
+            "y": 0.25
+          },
+          "pivot": {
+            "x": 0.51,
+            "y": 0.275
+          },
+          "keyframes": [
+            {
+              "offset": 0,
+              "x": 0,
+              "y": 0,
+              "rotate": 0
+            },
+            {
+              "offset": 0.42,
+              "x": 0,
+              "y": 0.003,
+              "rotate": -1.1
+            },
+            {
+              "offset": 1,
+              "x": 0,
+              "y": 0,
+              "rotate": 0
+            }
+          ]
+        }
+      ]
+    },
+    "lookaround": {
+      "durationMs": 2350,
+      "regions": [
+        {
+          "center": {
+            "x": 0.5,
+            "y": 0.16
+          },
+          "radius": {
+            "x": 0.39,
+            "y": 0.25
+          },
+          "pivot": {
+            "x": 0.51,
+            "y": 0.275
+          },
+          "keyframes": [
+            {
+              "offset": 0,
+              "x": 0,
+              "y": 0,
+              "rotate": 0
+            },
+            {
+              "offset": 0.28,
+              "x": -0.01,
+              "y": 0.002,
+              "rotate": -3
+            },
+            {
+              "offset": 0.66,
+              "x": 0.01,
+              "y": 0.002,
+              "rotate": 3
+            },
+            {
+              "offset": 1,
+              "x": 0,
+              "y": 0,
+              "rotate": 0
+            }
+          ]
+        }
+      ]
+    },
+    "puppet": {
+      "durationMs": 2050,
+      "regions": [
+        {
+          "center": {
+            "x": 0.735,
+            "y": 0.27
+          },
+          "radius": {
+            "x": 0.16,
+            "y": 0.15
+          },
+          "pivot": {
+            "x": 0.71,
+            "y": 0.37
+          },
+          "keyframes": [
+            {
+              "offset": 0,
+              "x": 0,
+              "y": 0,
+              "rotate": 0
+            },
+            {
+              "offset": 0.25,
+              "x": -0.006,
+              "y": -0.014,
+              "rotate": -5
+            },
+            {
+              "offset": 0.47,
+              "x": 0.008,
+              "y": -0.01,
+              "rotate": 5
+            },
+            {
+              "offset": 0.69,
+              "x": -0.005,
+              "y": -0.012,
+              "rotate": -4
+            },
+            {
+              "offset": 1,
+              "x": 0,
+              "y": 0,
+              "rotate": 0
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "events": {
+    "startup": "startup",
+    "hover": "hover",
+    "click": "click",
+    "drag-end": "drag-end",
+    "proactive": "proactive",
+    "welcome": "welcome"
+  },
+  "commands": {
+    "greet": {
+      "label": "打招呼",
+      "response": "greet",
+      "cooldownMs": 0
+    },
+    "comfort": {
+      "label": "安慰一下",
+      "response": "comfort",
+      "cooldownMs": 0
+    },
+    "company": {
+      "label": "陪我一会儿",
+      "response": "company",
+      "cooldownMs": 0
+    }
+  },
+  "states": {
+    "hovering": "shy",
+    "dragging": "shy"
+  },
+  "idleAction": "idle",
+  "ambient": {
+    "action": "blink",
+    "firstDelayMs": 4500,
+    "minIntervalMs": 4500,
+    "maxIntervalMs": 7500
+  },
+  "timing": {
+    "startupDelayMs": 1600,
+    "hoverDelayMs": 400,
+    "hoverTextDelayMs": 850,
+    "leaveDelayMs": 500,
+    "hoverCooldownMs": 8000,
+    "clickCooldownMs": 1200
+  }
+}

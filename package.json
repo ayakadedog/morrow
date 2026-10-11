@@ -1,0 +1,55 @@
+{
+  "name": "morrow-desktop",
+  "version": "0.4.2-unified-workspace",
+  "private": true,
+  "description": "Morrow（暮伴）：可切换角色的桌面陪伴应用",
+  "main": "out/main/index.js",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "dev": "electron-vite dev",
+    "start": "electron-vite preview",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "build": "npm run roles:validate && npm run typecheck && node scripts/build-native.mjs && electron-vite build",
+    "roles:validate": "node scripts/validate-role-packs.mjs",
+    "postinstall": "node node_modules/electron/install.js",
+    "pack": "npm run build && electron-builder --win --x64 --dir",
+    "dist:win": "npm run build && electron-builder --win --x64",
+    "pack:mac": "node scripts/build-macos.mjs --dir",
+    "dist:mac": "node scripts/build-macos.mjs",
+    "verify:platform": "node scripts/verify-platform.mjs",
+    "verify:platform:packaged": "node scripts/verify-platform.mjs --packaged",
+    "verify:desktop": "node scripts/verify-desktop.mjs",
+    "verify:companion": "node scripts/verify-companion.mjs",
+    "verify:chat": "node scripts/verify-chat.mjs",
+    "verify:admin": "node scripts/verify-admin-console.mjs",
+    "verify:workspace": "node scripts/verify-workspace.mjs"
+  },
+  "dependencies": {
+    "@ant-design/icons": "6.3.4",
+    "@langchain/core": "1.2.14",
+    "@langchain/deepseek": "1.1.17",
+    "@langchain/openai": "1.6.2",
+    "antd": "6.6.5",
+    "dayjs": "1.11.23",
+    "js-tiktoken": "1.0.21",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.1",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "5.2.0",
+    "electron": "44.5.1",
+    "electron-builder": "26.15.3",
+    "electron-vite": "5.0.0",
+    "playwright": "1.63.0",
+    "typescript": "6.0.3",
+    "vite": "7.3.6",
+    "vitest": "5.0.3"
+  }
+}

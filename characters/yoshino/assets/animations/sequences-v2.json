@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "status": "runtime-integrated-draft",
+  "characterId": "yoshino",
+  "runtimeIntegrated": true,
+  "canvas": { "width": 1024, "height": 1536 },
+  "anchor": { "x": 0.5, "y": 1 },
+  "frames": {
+    "normal": "assets/portraits/v2/normal.png",
+    "happy": "assets/expressions/v2/happy.png",
+    "shy": "assets/expressions/v2/shy.png",
+    "blink-half": "assets/animations/frames/v2/blink-half.png",
+    "blink-closed": "assets/animations/frames/v2/blink-closed.png",
+    "greet-mid": "assets/animations/frames/v2/greet-mid.png",
+    "greet-peak": "assets/animations/frames/v2/greet-peak.png",
+    "shy-mid": "assets/animations/frames/v2/shy-mid.png",
+    "shy-peak": "assets/animations/frames/v2/shy-peak.png"
+  },
+  "expressionTransitionMs": 180,
+  "actions": {
+    "blink": { "transitionMs": 0, "returnTo": "normal", "overlayRegions": [
+      { "x": 0.459, "y": 0.192, "radiusX": 0.034, "radiusY": 0.018 },
+      { "x": 0.548, "y": 0.175, "radiusX": 0.035, "radiusY": 0.020 }
+    ], "frames": [
+      { "frame": "normal", "holdMs": 40 },
+      { "frame": "blink-half", "holdMs": 45 },
+      { "frame": "blink-closed", "holdMs": 85 },
+      { "frame": "blink-half", "holdMs": 45 },
+      { "frame": "normal", "holdMs": 90 }
+    ] },
+    "greet": { "transitionMs": 70, "returnTo": "normal", "frames": [
+      { "frame": "normal", "holdMs": 90 },
+      { "frame": "greet-mid", "holdMs": 160 },
+      { "frame": "greet-peak", "holdMs": 650 },
+      { "frame": "greet-mid", "holdMs": 160 },
+      { "frame": "normal", "holdMs": 220 }
+    ] },
+    "shy": { "transitionMs": 70, "returnTo": "normal", "frames": [
+      { "frame": "normal", "holdMs": 110 },
+      { "frame": "shy-mid", "holdMs": 200 },
+      { "frame": "shy-peak", "holdMs": 700 },
+      { "frame": "shy-mid", "holdMs": 220 },
+      { "frame": "normal", "holdMs": 260 }
+    ] }
+  },
+  "notes": [
+    "少量中间姿态加短交叠预览；不等同骨骼动画或高帧率插值。",
+    "现有桌宠仍使用 manifest.json 中的原图；本配置尚未接入运行时。",
+    "快速操作取消旧动作，隐藏时暂停，减少动态效果时静止。"
+  ]
+}

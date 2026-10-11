@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "defaultCharacterId": "yoshino",
+  "characters": [
+    { "id": "yoshino", "manifest": "yoshino/manifest.json" },
+    { "id": "gojo", "manifest": "gojo/manifest.json" }
+  ]
+}

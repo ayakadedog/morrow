@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "yoshino",
+  "displayName": "冰芽川四糸乃",
+  "shortName": "四糸乃",
+  "description": "安静、温柔，也有一点害羞。",
+  "work": "约会大作战",
+  "status": "draft",
+  "persona": "profile/persona.md",
+  "prompt": "profile/prompt.md",
+  "roleConfig": "profile/role.json",
+  "interactionConfig": "interaction/dialogues.json",
+  "speakers": {
+    "yoshino": {
+      "displayName": "四糸乃",
+      "tone": "轻声、温柔、拘谨"
+    },
+    "yoshinon": {
+      "displayName": "四糸奈",
+      "tone": "明快、直率、偶尔打圆场"
+    }
+  },
+  "visual": {
+    "format": "full-body-png",
+    "canvas": {
+      "width": 1024,
+      "height": 1536
+    },
+    "anchor": {
+      "x": 0.5,
+      "y": 1
+    },
+    "mirrorAllowed": false,
+    "defaultExpression": "normal",
+    "fallbackExpression": "normal",
+    "expressions": {
+      "normal": "assets/portraits/v2/normal.png",
+      "happy": "assets/expressions/v2/happy.png",
+      "shy": "assets/expressions/v2/shy.png"
+    },
+    "plannedExpressions": [
+      "worried",
+      "surprised",
+      "sad"
+    ],
+    "animationConfig": "assets/animations/actions.json",
+    "frameAnimationConfig": "assets/animations/sequences-v2.json",
+    "motionConfig": "assets/animations/motions-v3.json",
+    "independentPuppetAnimation": false,
+    "lipSync": false,
+    "rigConfig": "assets/animations/rig-v4.json"
+  },
+  "voice": {
+    "enabled": false,
+    "status": "deferred"
+  },
+  "memory": {
+    "namespace": "yoshino"
+  },
+  "provenance": {
+    "runtimeAssets": "AI-generated fan-art drafts",
+    "referenceSource": "https://date-a-live4th-anime.com/character/yoshino.php",
+    "referenceImage": "assets/references/official-iv-yoshino.png",
+    "generatedDate": "2026-10-03"
+  },
+  "catalogConfig": "interaction/actions.json",
+  "behaviorConfig": "interaction/behaviors.json",
+  "bubbleConfig": "interaction/bubble.json"
+}

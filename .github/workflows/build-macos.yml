@@ -1,0 +1,71 @@
+name: Build macOS
+
+on:
+  workflow_dispatch:
+    inputs:
+      architecture:
+        description: Mac architecture
+        type: choice
+        required: true
+        default: both
+        options:
+          - both
+          - arm64
+          - x64
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: macOS ${{ matrix.arch }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        include: ${{ fromJSON(inputs.architecture == 'arm64' && '[{"os":"macos-15","arch":"arm64"}]' || inputs.architecture == 'x64' && '[{"os":"macos-15-intel","arch":"x64"}]' || '[{"os":"macos-15","arch":"arm64"},{"os":"macos-15-intel","arch":"x64"}]') }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Unit tests
+        run: npm test
+      - name: Build DMG
+        run: npm run dist:mac -- --${{ matrix.arch }}
+      - name: Check source build
+        run: npm run verify:platform
+      - name: Check packaged app
+        run: npm run verify:platform:packaged
+      - name: Verify ad-hoc signature
+        env:
+          MAC_ARCH: ${{ matrix.arch }}
+        run: |
+          if [ "$MAC_ARCH" = "arm64" ]; then
+            MORROW_BUNDLE="release/mac-arm64/Morrow.app"
+          else
+            MORROW_BUNDLE="release/mac/Morrow.app"
+          fi
+          codesign --verify --deep --strict --verbose=2 "$MORROW_BUNDLE"
+      - name: Upload DMG
+        uses: actions/upload-artifact@v7
+        with:
+          name: Morrow-macos-${{ matrix.arch }}
+          path: release/*.dmg
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 14
+      - name: Upload check reports
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: Morrow-macos-${{ matrix.arch }}-reports
+          path: artifacts/reports/*.json
+          if-no-files-found: ignore
+          retention-days: 14

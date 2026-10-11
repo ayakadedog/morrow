@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "status": "runtime-config",
+  "units": { "translation": "fraction-of-character-height", "rotation": "degrees", "time": "milliseconds" },
+  "actions": {
+    "idle": { "durationMs": 4200, "loop": true, "keyframes": [
+      { "offset": 0, "translateY": 0, "rotate": 0 },
+      { "offset": 0.5, "translateY": -0.0015, "rotate": 0 },
+      { "offset": 1, "translateY": 0, "rotate": 0 }
+    ] },
+    "acknowledge": { "durationMs": 900, "loop": false, "keyframes": [
+      { "offset": 0, "translateY": 0, "rotate": 0 },
+      { "offset": 0.35, "translateY": 0.0015, "rotate": 0.6 },
+      { "offset": 0.65, "translateY": 0.0005, "rotate": 0.25 },
+      { "offset": 1, "translateY": 0, "rotate": 0 }
+    ] },
+    "easygreet": { "durationMs": 1200, "loop": false, "keyframes": [
+      { "offset": 0, "translateY": 0, "rotate": 0 },
+      { "offset": 0.3, "translateY": -0.0015, "rotate": -1 },
+      { "offset": 0.65, "translateY": 0, "rotate": 0.4 },
+      { "offset": 1, "translateY": 0, "rotate": 0 }
+    ] }
+  },
+  "reducedMotion": "static"
+}

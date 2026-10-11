@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "events": { "click": "hello" },
+  "commands": { "greeting": { "label": "打招呼", "response": "hello", "cooldownMs": 1200 } },
+  "states": {},
+  "idleAction": "idle"
+}

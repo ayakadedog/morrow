@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "status": "design-spec",
+  "units": { "translation": "fraction-of-character-height", "rotation": "degrees", "time": "milliseconds" },
+  "actions": {
+    "idle": { "durationMs": 3200, "loop": true, "keyframes": [
+      { "offset": 0, "translateY": 0, "rotate": 0 },
+      { "offset": 0.5, "translateY": -0.003, "rotate": 0 },
+      { "offset": 1, "translateY": 0, "rotate": 0 }
+    ] }
+  },
+  "reducedMotion": "static"
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "actions": {
+    "idle": { "label": "放松待机", "allowInSubtle": false },
+    "acknowledge": { "label": "轻轻示意", "allowInSubtle": true },
+    "easygreet": { "label": "随意招呼", "allowInSubtle": false }
+  },
+  "expressions": {
+    "normal": { "label": "从容" },
+    "smile": { "label": "轻快笑意" },
+    "serious": { "label": "认真倾听" }
+  }
+}

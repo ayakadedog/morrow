@@ -1,0 +1,15 @@
+# 生成记录与完整提示词
+
+生成日期：2026-10-03。使用内置 image_gen 工具；没有调用 CLI，没有使用用户 API Key。
+normal 先生成再清理背景；happy 和 shy 都以 normal.png 为编辑目标，保持姿势一致。素材为 AI 同人设计初稿。
+
+## 基础立绘
+Use case: stylized-concept. Asset type: full-body transparent PNG desktop companion sprite, neutral base pose. Subject: Yoshino (Himekawa Yoshino / 四糸乃) from Date A Live, recognizable faithful anime fan-art interpretation of her classic green rabbit hood Spirit outfit. She is a young-looking girl with long softly wavy sky-blue hair and blue eyes, a shy gentle neutral expression. Oversized green rabbit-ear hooded coat, pink oval patches with yellow stitch marks on the ear tips, cream patterned edging and white zigzag trim on hood cuffs and hem, modest white layered ruffle dress completely covered and green boots with white trim and small yellow bead details. White rabbit hand puppet Yoshinon on HER OWN LEFT HAND (viewer right), pink inner ears, one dark round button/eyepatch with stitch details and orange-yellow neck bow; puppet lively smiling. Standing front-facing with a very slight 3/4 angle, puppet hand raised at chest height, other hand resting modestly near coat. Clean polished 2D Japanese anime visual-novel sprite with fine consistent linework and restrained cel shading. Portrait 1024x1536 canvas if possible, character centered, whole rabbit ears and boots visible, 6 percent empty margin at all edges, feet aligned near 94 percent canvas height. True transparent background, no cast shadow or scene, no text, no watermark, one character with her puppet only, no extra panels. Age-appropriate and nonsexual. Keep a stable neutral standing pose for later facial expression variants. This is original generated fan art, not an official screenshot.
+
+## 背景清理
+Edit target: provided Yoshino desktop sprite. Change ONLY the background cleanup: remove every soft colored glow, dark gradient, fog, ground shadow, edge halo or other background pixel outside the character silhouette. Replace all empty space with true alpha=0 transparency, including between legs, rabbit ears and arms. Keep the character, puppet, face, clothing, colors, outline, pose, size, position, canvas 1024x1536 exactly unchanged. Clean cutout sprite for a transparent desktop window, crisp antialiased silhouette, no aura. Do not redraw or crop the subject. Preserve original transparent areas.
+
+## 开心表情
+Edit target: provided Yoshino base full-body transparent desktop sprite. Produce the HAPPY expression variant. Change ONLY the girl's facial expression: a gentle small warm smile, slightly softened happy eyes, faint cheerful blush. Keep exact same identity, blue hair shape, green rabbit hood and long ears, coat, ruffle dress, boots, left-hand white rabbit puppet, puppet face and pose, body pose, proportions, line style, silhouette position and 1024x1536 canvas. Complete full body including ears and feet. No added objects, no text. Retain true transparent background with fully transparent empty areas, no new background, no glow or shadow. This is a consistency-preserving visual novel expression edit; do not recompose the sprite.
+
+## 害羞表情

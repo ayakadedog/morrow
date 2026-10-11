@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 2,
+  "responses": {
+    "hello": [
+      { "id": "hello-first", "speaker": "replace-with-stable-id", "text": "你好。", "expression": "normal" }
+    ]
+  }
+}

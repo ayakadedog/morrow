@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "expressions": {
+    "normal": {
+      "label": "平常"
+    },
+    "happy": {
+      "label": "开心"
+    },
+    "shy": {
+      "label": "害羞"
+    }
+  },
+  "actions": {
+    "idle": {
+      "label": "安静待机",
+      "allowInSubtle": false
+    },
+    "greet": {
+      "label": "挥手打招呼",
+      "allowInSubtle": false
+    },
+    "smallgreet": {
+      "label": "轻轻招呼",
+      "allowInSubtle": false
+    },
+    "shy": {
+      "label": "害羞低头",
+      "allowInSubtle": false
+    },
+    "comfort": {
+      "label": "温柔安慰",
+      "allowInSubtle": false
+    },
+    "blink": {
+      "label": "眨眨眼",
+      "allowInSubtle": true
+    },
+    "lookaround": {
+      "label": "左右看看",
+      "allowInSubtle": false
+    },
+    "puppet": {
+      "label": "四糸奈回应",
+      "allowInSubtle": false
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "choices": [
+    "greet",
+    "comfort",
+    "company"
+  ],
+  "choiceHint": "可以选一个回应，也可以安静地待着。",
+  "passiveHint": "轻声陪伴",
+  "theme": {
+    "background": "#fffffff9",
+    "backgroundEnd": "#f8fbf3f7",
+    "text": "#465f3e",
+    "accent": "#739167",
+    "border": "#d3e0cde8",
+    "buttonBackground": "#edf5e6",
+    "radius": 20
+  }
+}

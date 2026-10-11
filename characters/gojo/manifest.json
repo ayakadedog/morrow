@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "gojo",
+  "displayName": "五条悟",
+  "shortName": "五条悟",
+  "work": "咒术回战",
+  "description": "轻松、自信、爱开玩笑；到了要紧的时候，会认真听你说。",
+  "status": "draft",
+  "persona": "profile/persona.md",
+  "prompt": "profile/prompt.md",
+  "roleConfig": "profile/role.json",
+  "interactionConfig": "interaction/dialogues.json",
+  "catalogConfig": "interaction/actions.json",
+  "behaviorConfig": "interaction/behaviors.json",
+  "bubbleConfig": "interaction/bubble.json",
+  "speakers": { "gojo": { "displayName": "五条悟" } },
+  "visual": {
+    "format": "full-body-png",
+    "canvas": { "width": 1024, "height": 1536 },
+    "anchor": { "x": 0.5, "y": 1 },
+    "mirrorAllowed": false,
+    "defaultExpression": "normal",
+    "fallbackExpression": "normal",
+    "expressions": {
+      "normal": "assets/portraits/normal.png",
+      "smile": "assets/expressions/smile.png",
+      "serious": "assets/expressions/serious.png"
+    },
+    "animationConfig": "assets/animations/actions.json",
+    "independentPuppetAnimation": false,
+    "lipSync": false
+  },
+  "voice": { "enabled": false, "status": "deferred" },
+  "memory": { "namespace": "gojo" },
+  "provenance": {
+    "runtimeAssets": "AI-generated fan-art drafts; not official illustrations",
+    "referenceSource": "https://jujutsukaisen.jp/character/shibuyajihen.php",
+    "generatedDate": "2026-10-05",
+    "defaultEra": "Adult teacher, 2018 before the Shibuya Incident"
+  }
+}

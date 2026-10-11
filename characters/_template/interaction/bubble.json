@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "choices": ["greeting"],
+  "choiceHint": "可以选一个回应。",
+  "passiveHint": "在这里陪伴你。",
+  "theme": {
+    "background": "#ffffff", "backgroundEnd": "#f6f7f8", "text": "#333333", "accent": "#666666",
+    "border": "#dddddd", "buttonBackground": "#eeeeee", "radius": 20
+  }
+}

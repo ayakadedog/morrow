@@ -1,0 +1,53 @@
+appId: app.morrow.desktop
+productName: Morrow
+directories:
+  output: release
+files:
+  - out/**
+  - package.json
+asar: true
+npmRebuild: false
+electronDist: node_modules/electron/dist
+extraResources:
+  - from: characters
+    to: characters
+    filter:
+      - registry.json
+      - "*/manifest.json"
+      - "*/profile/**"
+      - "*/interaction/**"
+      - "*/assets/portraits/**"
+      - "*/assets/expressions/**"
+      - "*/assets/animations/**"
+      - "!_template/**"
+win:
+  target: nsis
+  signAndEditExecutable: false
+  extraResources:
+    - from: native/foreground-observer.exe
+      to: helpers/foreground-observer.exe
+mac:
+  target: dmg
+  category: public.app-category.entertainment
+  # Private test builds: ad-hoc signed, without Developer ID or notarization.
+  identity: "-"
+  hardenedRuntime: false
+  notarize: false
+  extraResources:
+    - from: resources/icons
+      to: icons
+dmg:
+  title: Morrow
+  contents:
+    - x: 150
+      y: 170
+    - x: 430
+      y: 170
+      type: link
+      path: /Applications
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  deleteAppDataOnUninstall: false
+artifactName: Morrow-${version}-${arch}.${ext}

@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "choices": ["sayhello", "encourage", "takeabreak"],
+  "choiceHint": "随你选，慢慢来。",
+  "passiveHint": "想聊就聊，不用赶着回答。",
+  "theme": { "background": "#f8fbff", "backgroundEnd": "#edf3ff", "text": "#24324a", "accent": "#356fd4", "border": "#c3d5ee", "buttonBackground": "#e6eefc", "radius": 18 }
+}

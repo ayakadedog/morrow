@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "events": { "startup": "arrival", "hover": "notice", "click": "touch", "drag-end": "placed", "proactive": "checkin", "welcome": "return" },
+  "commands": {
+    "sayhello": { "label": "打个招呼", "response": "greeting", "cooldownMs": 1200 },
+    "encourage": { "label": "给点信心", "response": "support", "cooldownMs": 1500 },
+    "takeabreak": { "label": "歇一会儿", "response": "rest", "cooldownMs": 1500 }
+  },
+  "states": { "hovering": "smile", "dragging": "normal" },
+  "idleAction": "idle",
+  "timing": { "startupDelayMs": 1800, "hoverDelayMs": 500, "hoverTextDelayMs": 1000, "leaveDelayMs": 500, "hoverCooldownMs": 10000, "clickCooldownMs": 1200 }
+}

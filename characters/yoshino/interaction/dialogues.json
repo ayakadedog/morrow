@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 2,
+  "responses": {
+    "startup": [
+      {
+        "id": "hello-today",
+        "speaker": "yoshino",
+        "text": "你好……今天，也可以陪你一会儿吗？",
+        "expression": "happy",
+        "action": "greet"
+      },
+      {
+        "id": "hello-here",
+        "speaker": "yoshino",
+        "text": "我来了……给我留一小块桌面，就好。",
+        "expression": "happy",
+        "action": "greet"
+      }
+    ],
+    "hover": [
+      {
+        "id": "hover-call",
+        "speaker": "yoshino",
+        "text": "嗯……你在叫我吗？",
+        "expression": "shy",
+        "action": "shy"
+      },
+      {
+        "id": "hover-listen",
+        "speaker": "yoshino",
+        "text": "我在听……慢慢说就好。",
+        "expression": "happy"
+      },
+      {
+        "id": "hover-near",
+        "speaker": "yoshino",
+        "text": "你靠近的时候……我会有一点害羞。",
+        "expression": "shy"
+      }
+    ],
+    "click": [
+      {
+        "id": "click-here",
+        "speaker": "yoshino",
+        "text": "我在这里……有什么事吗？",
+        "expression": "happy"
+      },
+      {
+        "id": "click-together",
+        "speaker": "yoshino",
+        "text": "想打个招呼，还是……让我陪你一会儿？",
+        "expression": "shy",
+        "action": "shy"
+      },
+      {
+        "id": "click-puppet",
+        "speaker": "yoshinon",
+        "text": "嘿嘿，四糸乃其实很高兴你来打招呼哦。",
+        "expression": "happy",
+        "action": "puppet"
+      }
+    ],
+    "drag-end": [
+      {
+        "id": "placed-here",
+        "speaker": "yoshino",
+        "text": "这里……也很好。",
+        "expression": "happy"
+      },
+      {
+        "id": "placed-thanks",
+        "speaker": "yoshino",
+        "text": "嗯……就留在这里吧。",
+        "expression": "shy"
+      }
+    ],
+    "proactive": [
+      {
+        "id": "care-break",
+        "speaker": "yoshino",
+        "text": "如果累了……可以稍微休息一下。",
+        "expression": "happy",
+        "action": "comfort"
+      },
+      {
+        "id": "care-quiet",
+        "speaker": "yoshino",
+        "text": "不用特意回应我……我会安静地陪着你。",
+        "expression": "happy"
+      },
+      {
+        "id": "care-puppet",
+        "speaker": "yoshinon",
+        "text": "休息可不是偷懒哦。慢慢来就好！",
+        "expression": "happy",
+        "action": "puppet"
+      }
+    ],
+    "welcome": [
+      {
+        "id": "back-welcome",
+        "speaker": "yoshino",
+        "text": "欢迎回来……又见到你了。",
+        "expression": "happy",
+        "action": "greet"
+      },
+      {
+        "id": "back-wait",
+        "speaker": "yoshino",
+        "text": "嗯……我还在这里。",
+        "expression": "happy"
+      }
+    ],
+    "greet": [
+      {
+        "id": "greet-hand",
+        "speaker": "yoshino",
+        "text": "你好……很高兴见到你。",
+        "expression": "happy",
+        "action": "greet"
+      },
+      {
+        "id": "greet-thanks",
+        "speaker": "yoshino",
+        "text": "你好……今天，也请多多关照。",
+        "expression": "happy",
+        "action": "greet"
+      }
+    ],
+    "comfort": [
+      {
+        "id": "comfort-slow",
+        "speaker": "yoshino",
+        "text": "不需要一下子做好所有事……我们慢慢来。",
+        "expression": "happy",
+        "action": "comfort"
+      },
+      {
+        "id": "comfort-rest",
+        "speaker": "yoshino",
+        "text": "先放松一下吧……我会陪着你。",
+        "expression": "happy",
+        "action": "comfort"
+      }
+    ],
+    "company": [
+      {
+        "id": "company-here",
+        "speaker": "yoshino",
+        "text": "好……我就在旁边，安静地陪你。",
+        "expression": "happy"
+      },
+      {
+        "id": "company-around",
+        "speaker": "yoshino",
+        "text": "嗯……让我看看，在你旁边坐哪里好呢。",
+        "expression": "happy",
+        "action": "lookaround"
+      }
+    ]
+  }
+}

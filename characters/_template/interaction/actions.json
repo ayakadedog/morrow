@@ -1,0 +1,5 @@
+{
+  "schemaVersion": 1,
+  "expressions": { "normal": { "label": "平常" } },
+  "actions": { "idle": { "label": "安静待机", "allowInSubtle": false } }
+}
